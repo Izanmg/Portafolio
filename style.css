@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    --margin-xl:50px;
+    --bg-color:rgb(31, 28, 29);
+    --blur-bg-color:rgb(33, 20, 92);
+    --font-color: rgb(212, 211, 211);
+}
+*,*:before,*:after{
+    margin:0;
+    padding:0;
+}
+html{
+    font-family: Onest, system-ui, sans-serif;
+    color: var(--font-color);
+}
+body{
+    background-color: var(--bg-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 10;
+}
+nav {
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.344);
+    padding: 9px 15px;
+    display: flex;
+    column-gap: 2rem;
+}
+
+a{
+    display: flex;
+    text-decoration: none;
+    color: var(--font-color);
+    align-items: center;
+}
+
+section{
+    margin: 5rem 20px;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+#bg-color{
+    background: linear-gradient(to bottom, var(--blur-bg-color) , var(--bg-color) 100%); 
+    height: 86%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#inicio{
+    width: 100%;
+    padding: 2.5rem 0;
+    
+}
+#img-perfil{
+    border: solid var(--font-color) 2px;
+    padding: 5px;
+    border-radius: 99999px;
+    max-width: 120px;
+}
+#div-perfil{
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+#nombre{
+    font-size: 40px;
+    align-self: center;
+}
+
+#text{
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#div-links{
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.link{
+    background-color: rgba(0, 0, 0, 0.344);
+    border-radius: 20px;
+    padding: 1% 2.5%;
+    display: flex;
+    column-gap: 4px;
+}
+
+.invert{
+    filter: invert();
+}
+
+#prueba{
+    height: 700px;
+}
