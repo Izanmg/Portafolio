@@ -52,7 +52,7 @@ a {
     align-items: center;
 }
 section {
-    margin: 5rem 0;
+    margin: 5rem 0 2rem 0;
     max-width: 40rem;
     display: flex;
     flex-direction: column;
