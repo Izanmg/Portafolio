@@ -151,6 +151,23 @@ article{
     background-color: var(--bg-color-button);
     border: solid 1px var(--border-color-button);
 }
+
+.link-not {
+    background-color: var(--color-bg-links);
+    border: solid 1px var(--color-border);
+    border-radius: 20px;
+    padding: 0.1rem .5rem; 
+    display: flex;
+    column-gap: 4px;
+    margin-top: 7px;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, border 0.4s ease-in-out;
+}
+.link-not:hover {
+    background-color: var(--bg-color-button);
+    cursor: not-allowed;
+    border: solid 1px var(--border-color-button);
+}
+
 .invert {
     filter: invert();
 }
@@ -345,4 +362,8 @@ footer {
     background-color: var(--blur-bg-color);
     margin: 13px 0; 
     align-self: center; 
+}
+
+.button-simple{
+
 }
